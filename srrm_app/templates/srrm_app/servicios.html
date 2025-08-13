@@ -1,0 +1,99 @@
+{% extends "srrm_app/base.html" %} 
+
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+
+  <h2 class="mb-4 text-center">Servicio de Renovación de Recetas Médicas</h2>
+
+  <!-- 1. Descripción general -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img src="{% static 'servicios.jpg' %}" alt="Renovación de Recetas Médicas" class="img-fluid rounded" style="border-radius: 20px;">
+    </div>
+    <div class="col-md-6">
+      <h4>¿En qué consiste el servicio?</h4>
+      <p>Ofrecemos un sistema digital que te permite renovar tus recetas médicas desde cualquier dispositivo por solo <strong>RD$150 por renovación</strong>. La primera renovación con cada doctor es totalmente gratis.</p>
+      <p>Este servicio facilita que tengas acceso a tus recetas electrónicas vinculadas a tu cédula, nombre o correo, especialmente útil para pacientes con tratamientos múltiples o para niños.</p>
+      <p>Además, aunque recibas la receta física impresa por tu médico, tendrás siempre la opción de descargarla y renovarla en línea para un mejor control y seguimiento.</p>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 order-md-2">
+      <img src="{% static 'beneficios.jpg' %}" alt="Beneficios" class="img-fluid rounded" style="border-radius: 20px;">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h4>Beneficios y diferencias del servicio</h4>
+      <ul>
+        <li>Renovación ilimitada para tratamientos de uso continuo, siempre y cuando el médico lo valide.</li>
+        <li>Control y seguimiento mediante citas constantes para supervisar la evolución.</li>
+        <li>Recetas con validez limitada (generalmente 1 mes) para permitir evaluaciones periódicas.</li>
+        <li>Posibilidad de comprar medicamentos poco a poco según tu presupuesto.</li>
+      </ul>
+      <p>La sostenibilidad del sistema depende de que agendes tu próxima cita médica después de cada consulta, garantizando así un seguimiento responsable y eficaz.</p>
+    </div>
+  </div>
+
+  <!-- 2. Pasos para acceder al servicio -->
+  <h3 class="mb-4 text-center">Pasos para usar el servicio</h3>
+
+  <!-- Paso 1 -->
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6">
+      <img src="{% static 'cita.jpg' %}" alt="Paso 1 - Reserva" class="img-fluid rounded" style="border-radius: 20px;">
+    </div>
+    <div class="col-md-6">
+      <h5>Paso 1: Reserva tu cita en el hospital o clínica</h5>
+      <p>Reserva una cita en el hospital o clínica que prefieras, siempre y cuando esa institución tenga cuenta con nuestro sistema.</p>
+    </div>
+  </div>
+
+  <!-- Paso 2 -->
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6 order-md-2">
+      <img src="{% static 'page.jpg' %}" alt="Paso 2 - Registro" class="img-fluid rounded" style="border-radius: 20px;">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h5>Paso 2: Regístrate en nuestra página</h5>
+      <p>Crea tu cuenta gratuita en nuestra plataforma para poder acceder a las recetas electrónicas que tus médicos vinculen a tu cédula, nombre o correo. Esto es especialmente útil para el caso de niños o pacientes con múltiples tratamientos.</p>
+    </div>
+  </div>
+
+  <!-- Paso 3 -->
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6">
+      <img src="{% static 'doctor.jpg' %}" alt="Paso 3 - Consulta y receta" class="img-fluid rounded" style="border-radius: 20px;">
+    </div>
+    <div class="col-md-6">
+      <h5>Paso 3: Consulta médica y receta</h5>
+      <p>Durante tu consulta, el médico enlazará la receta con tus datos y te entregará una receta física impresa, además de registrar la receta electrónicamente para que la tengas disponible siempre que lo necesites.</p>
+    </div>
+  </div>
+
+  <!-- Paso 4 -->
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6 order-md-2">
+      <img src="{% static 'seguir.jpg' %}" alt="Paso 4 - Renovación y seguimiento" class="img-fluid rounded" style="border-radius: 20px;">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h5>Paso 4: Renovación y seguimiento del tratamiento</h5>
+      <p>Si tu tratamiento es de uso continuo, podrás renovar tus recetas cuantas veces necesites pagando RD$150 por renovación (la primera es gratis por doctor). El médico monitoreará tu evolución y bloqueará la receta cuando no sea necesaria más renovación.</p>
+      <p>Para tratamientos con tiempo limitado, tendrás la opción de descargar la receta gratis la primera vez y renovarla pagando durante el periodo indicado (normalmente 1 mes).</p>
+    </div>
+  </div>
+
+  <!-- Paso 5 -->
+  <div class="row align-items-center mb-4">
+    <div class="col-md-6">
+      <img src="{% static 'agendar.jpg' %}" alt="Paso 5 - Agenda cita de seguimiento" class="img-fluid rounded" style="border-radius: 20px;">
+    </div>
+    <div class="col-md-6">
+      <h5>Paso 5: Agenda cita de seguimiento</h5>
+      <p>Para mantener el control y la efectividad del tratamiento, es responsabilidad del paciente agendar y asistir a citas de seguimiento donde el médico podrá evaluar la necesidad de continuar o finalizar la renovación de la receta.</p>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

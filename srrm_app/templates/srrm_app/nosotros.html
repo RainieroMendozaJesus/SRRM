@@ -1,0 +1,74 @@
+{% extends 'srrm_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Imagen principal de cabecera -->
+<div class="w-100">
+    <img src="{% static 'equipo.jpg' %}" 
+         alt="Nuestro equipo" 
+         class="img-fluid w-100" 
+         style="max-height: 400px; object-fit: cover; border-radius: 0 0 20px 20px;">
+</div>
+
+<!-- Contenido principal -->
+<div class="container my-5">
+
+    <!-- Título principal -->
+    <h1 class="text-center fw-bold mb-4">Nuestra Historia: De la Frustración a la Solución</h1>
+
+    <!-- Sección 1: Origen -->
+    <div class="mb-5">
+        <h3 class="fw-semibold text-primary mb-3">El Origen de Nuestra Idea</h3>
+        <p class="fs-5 text-justify">
+            Todo comenzó con una pregunta sencilla pero poderosa: <strong>¿Por qué tiene que ser tan difícil?</strong> 
+            La idea de este sistema nació de experiencias personales y de escuchar las historias de frustración 
+            de muchas personas. Escuchamos a pacientes en farmacias diciendo: 
+            <em>"El doctor me dio una receta que no se entiende"</em>, 
+            <em>"El seguro me la rechazó y tuve que volver a pagar otra consulta"</em>.
+        </p>
+        <p class="fs-5 text-justify">
+            Personas con tratamientos crónicos debían repetir cada mes el mismo ciclo agotador: pedir permiso en el trabajo, 
+            gastar en transporte y esperar horas en un consultorio, solo para obtener un papel idéntico al del mes anterior. 
+            El punto de quiebre llegó cuando vimos el impacto económico: pacientes pagando hasta RD$6,000 por una simple renovación 
+            de receta, porque un error administrativo o una fecha vencida impedían usar su seguro médico. 
+        </p>
+        <p class="fs-5 text-justify">
+            Fue entonces cuando entendimos que, con nuestros conocimientos en tecnología, podíamos y debíamos crear una solución 
+            que eliminara estas barreras.
+        </p>
+    </div>
+
+    <!-- Sección 2: Misión -->
+    <div class="mb-5">
+        <h3 class="fw-semibold text-primary mb-3">Nuestra Misión</h3>
+        <p class="fs-5 text-justify">
+            Nuestra misión es clara: <strong>simplificar el acceso a la salud a través de la tecnología</strong>. 
+            Queremos que cualquier persona en República Dominicana pueda renovar sus medicamentos de forma rápida, 
+            segura y económica, garantizando que puedan usar el seguro médico que ya pagan.
+        </p>
+        <p class="fs-5 text-justify">
+            Creemos firmemente que la tecnología es la herramienta clave para modernizar el sector salud, 
+            mejorar la calidad de vida de los pacientes y optimizar el tiempo y recursos de médicos y centros de salud.
+        </p>
+    </div>
+
+    <!-- Sección 3: Quiénes somos -->
+    <div class="mb-5">
+        <h3 class="fw-semibold text-primary mb-3">¿Quiénes Somos?</h3>
+        <p class="fs-5 text-justify">
+            Somos <strong>Rainiero Mendoza (2022-1079)</strong> y <strong>Eliam Pilier (2021-0510)</strong>, 
+            estudiantes de término de Desarrollo de Software en el 
+            <strong>Instituto Tecnológico de Las Américas (ITLA)</strong>.
+        </p>
+        <p class="fs-5 text-justify">
+            Este proyecto es el resultado de nuestra formación académica y, sobre todo, de nuestro compromiso por 
+            aplicar la tecnología para resolver problemas reales que afectan a nuestra comunidad. 
+            Queremos ofrecer una solución funcional, escalable y con impacto positivo y duradero en el sistema 
+            de salud dominicano.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}
