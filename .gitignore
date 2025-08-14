@@ -1,8 +1,6 @@
 my_env/
-db.sqlite3
 __pycache__/
 *.pyc
 
 # Archivos a ignorar
 .env
-staticfiles/
